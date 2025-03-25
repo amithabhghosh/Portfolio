@@ -1,0 +1,65 @@
+.miniProject{
+    padding: 20px 30px 50px 30px;
+    background: #041d31;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.miniProject h2{
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #fff;
+}
+.miniProjectContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:50px;
+    margin-top: 25px;
+}
+.miniProjectBody{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+border: 2px solid cyan;
+border-radius: 10px;
+}
+.miniProjectBody img{
+    width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.miniProjectBody p{
+    color: #fff;
+    padding: 10px;
+}
+.miniProjectBody button{
+    margin-bottom: 10px ;
+    padding: 6px ;
+    outline :none;
+    border: none;
+    background: cyan;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.miniProjectBody:hover{
+    transform: translateY(-5px);
+    transition: .25s ease-in-out;
+}
+@media screen and (max-width: 1024px){
+    .miniProjectBody p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 425px){
+    .miniProjectContainer{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}

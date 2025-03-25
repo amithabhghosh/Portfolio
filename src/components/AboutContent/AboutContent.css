@@ -1,0 +1,106 @@
+.aboutContent{
+    padding: 100px 50px 50px 50px;
+    background: #041d31;
+    display: flex;
+    flex-direction: column;
+}
+.aboutContent h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.aboutMain{
+   display: flex;
+align-items: center;
+gap: 230px;
+justify-content: space-around;
+
+}
+.aboutContent img{
+ margin-left: 100px;
+        background: #088494;
+       border: 10px solid cyan;
+       border-radius: 50%;
+       width: 350px;
+       height: 350px;
+       box-shadow: 0 0 20px 5px #3498db;
+       animation: glow 2s infinite alternate;
+     }
+
+     .aboutDetails{
+        display: flex;
+        
+      gap: 10px;
+        flex-direction: column;
+
+     }
+     .aboutDetails p{
+        color: #fff;
+        
+     }
+     .aboutDetails button{
+width: 40%;
+padding:10px;
+border: none;
+outline: none;
+border-radius: 10px;
+background: cyan;
+color: black;
+font-weight: 500;
+font-size: 15px;
+cursor: pointer;
+box-shadow: 0 0 20px 5px #3498db;
+     }
+     @keyframes glow {
+         0% {
+           box-shadow: 0 0 20px 5px #3498db;
+         }
+         50% {
+           box-shadow: 0 0 40px 10px #6ebefc;
+         }
+         100% {
+           box-shadow: 0 0 20px 5px #3498db;
+         }
+       }
+
+       @media screen and (max-width: 1024px){
+.aboutMain{
+    gap: 50px;
+}
+.aboutContent img{
+    margin-left: 50px;
+}
+       }       
+       @media screen and (max-width: 768px){
+.aboutMain{
+    flex-direction: column;
+}
+       }
+       @media screen and (max-width: 425px){
+        .aboutContent img{
+            margin-left: 0;
+        }.aboutDetails p{
+            font-size: 15px;
+        }
+        .aboutDetails button{
+            width: 50%;
+        }
+        .aboutContent{
+            padding: 100px 20px 50px 20px;
+        }
+       }
+       @media screen and (max-width: 375px){
+        .aboutContent img{
+            width: 300px;
+            height: 300px;
+        }
+        .aboutDetails p{
+            font-size: 12px;
+        }
+        .aboutDetails button{
+            font-size: 10px;
+        }
+       }
