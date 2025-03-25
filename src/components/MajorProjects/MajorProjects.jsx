@@ -22,7 +22,7 @@ export const MajorProjects = () => {
 <div className="majorProjectsBody">
    
     <img src={protfolioImage} alt="" />
-    <p>My Personal Portfolio</p>
+    <p>Jobo Freelance Platform</p>
     <button onClick={PortfolioHandleClick}>View Website</button>
 
 </div>
